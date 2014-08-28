@@ -60,9 +60,6 @@ void init_msm_properties(unsigned long msm_id, unsigned long msm_ver, char *boar
         property_set("ro.build.description", "kltevzw-user 4.4.2 KOT49H G900VVRU1ANCG release-keys");
         property_set("ro.product.model", "SM-G900V");
         property_set("ro.product.device", "kltevzw");
-        property_set("ro.telephony.default_cdma_sub", "0");
-        property_set("ro.cdma.home.operator.alpha", "Verizon");
-        property_set("ro.cdma.home.operator.numeric", "311480");
         cdma_properties("0", "311480", "Verizon");
     }
     /* TODO: Add Verizon MVNOs */
@@ -75,7 +72,6 @@ void init_msm_properties(unsigned long msm_id, unsigned long msm_ver, char *boar
 void cdma_properties(char default_cdma_sub[], char operator_numeric[],
         char operator_alpha[])
 {
-    property_set("ril.subscription.types", "NV,RUIM");
     property_set("ro.cdma.home.operator.numeric", operator_numeric);
     property_set("ro.cdma.home.operator.alpha", operator_alpha);
     property_set("ro.telephony.default_cdma_sub", default_cdma_sub);
