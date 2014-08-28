@@ -1,6 +1,6 @@
 # Bluetooth firmware
 vendor/firmware/bcm4350.hcd
-vendor/firmware/BT_FW_VER_BCM4354_003.001.012.0209.0328_K_SPR_VM_ORC.hcd
+vendor/firmware/BT_FW_VER_BCM4354_003.001.012.0167.0213_K_LTE_ORC.hcd
 
 # GPS
 -app/com.qualcomm.location.apk
@@ -14,10 +14,7 @@ vendor/lib/liblbs_core.so
 vendor/lib/liblocationservice.so
 
 # NFC
-vendor/firmware/bcm2079xB4_firmware.ncd
-vendor/firmware/bcm2079xB4_pre_firmware.ncd
-vendor/firmware/bcm2079xB5_firmware.ncd
-vendor/firmware/bcm2079xB5_pre_firmware.ncd
+vendor/firmware/libpn547_fw.so
 
 # Qualcomm framework
 vendor/lib/libdiag.so
