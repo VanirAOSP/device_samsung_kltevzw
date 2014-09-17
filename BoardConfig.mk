@@ -15,7 +15,7 @@
 # inherit from common klte
 -include device/samsung/klte-common/BoardConfigCommon.mk
 
-TARGET_OTA_ASSERT_DEVICE := kltevzw
+TARGET_OTA_ASSERT_DEVICE := kltevzw,klte
 
 # Kernel
 TARGET_KERNEL_VARIANT_CONFIG := msm8974pro_sec_klte_vzw_defconfig
