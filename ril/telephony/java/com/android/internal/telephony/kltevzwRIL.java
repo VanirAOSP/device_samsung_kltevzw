@@ -57,7 +57,7 @@ import com.android.internal.telephony.uicc.IccCardStatus;
  * Handles most GSM and CDMA cases.
  * {@hide}
  */
-public class klteuscRIL extends RIL implements CommandsInterface {
+public class kltevzwRIL extends RIL implements CommandsInterface {
 
     private AudioManager mAudioManager;
 
