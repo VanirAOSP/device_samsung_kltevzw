@@ -34,8 +34,5 @@ BOARD_RECOVERYIMAGE_PARTITION_SIZE := 15728640
 BOARD_SYSTEMIMAGE_PARTITION_SIZE := 2587885568
 BOARD_USERDATAIMAGE_PARTITION_SIZE := 12442385920
 
-# RIL
-BOARD_RIL_CLASS := ../../../device/samsung/klteusc/ril
-
 # inherit from the proprietary version
 -include vendor/samsung/kltevzw/BoardConfigVendor.mk
