@@ -1,4 +1,4 @@
-# Copyright (C) 2014 The CyanogenMod Project
+# Copyright (C) 2016 The CyanogenMod Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -15,10 +15,15 @@
 # inherit from common klte
 -include device/samsung/klte-common/BoardConfigCommon.mk
 
-TARGET_OTA_ASSERT_DEVICE := kltevzw
+TARGET_OTA_ASSERT_DEVICE := kltevzw,klte
 
 # Kernel
 TARGET_KERNEL_VARIANT_CONFIG := msm8974pro_sec_klte_vzw_defconfig
+
+# Init
+TARGET_INIT_VENDOR_LIB := libinit_msm
+TARGET_LIBINIT_DEFINES_FILE := device/samsung/kltevzw/init/init_klte.cpp
+TARGET_UNIFIED_DEVICE := true
 
 # NFC
 BOARD_NFC_CHIPSET := pn547
@@ -26,8 +31,8 @@ BOARD_NFC_CHIPSET := pn547
 # Partitions
 BOARD_BOOTIMAGE_PARTITION_SIZE := 13631488
 BOARD_RECOVERYIMAGE_PARTITION_SIZE := 15728640
-BOARD_SYSTEMIMAGE_PARTITION_SIZE := 2587885568
-BOARD_USERDATAIMAGE_PARTITION_SIZE := 12442385920
+BOARD_SYSTEMIMAGE_PARTITION_SIZE := 3145728000
+BOARD_USERDATAIMAGE_PARTITION_SIZE := 11334040576
 
 # inherit from the proprietary version
 -include vendor/samsung/kltevzw/BoardConfigVendor.mk
